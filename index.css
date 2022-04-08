@@ -1,56 +1,89 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+	margin: 0%;
+	padding: 0%;
 }
-body{
-    background: url("bgImage.jpg") no-repeat center fixed;
-    background-size: cover;
+body {
+	background: url("bgImage.jpg") no-repeat center fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
-.container{
-    /* border :10px solid black; */
-    position: absolute;
-    top: 30%;
-    left: 36%;
-    width: 38%;
+.container {
+	/* border :10px solid black; */
+	position: absolute;
+	top: 30%;
+	left: 36%;
+	width: 38%;
 }
-.container h1{
-    color: white;
-    display: inline;
-    width: 50%;
-    border-bottom: 3px solid #8b1fc5;;
-    font-style: unset;
-    margin-bottom: 2px;
-    padding-bottom: 7px;
-    font-family: unset;
+.container h1 {
+	color: white;
+	display: inline;
+	width: 50%;
+	border-bottom: 3px solid #8b1fc5;
+	font-style: unset;
+	margin-bottom: 2px;
+	padding-bottom: 7px;
+	font-family: unset;
 }
-.box{
+.box {
+	margin: 24px 0px;
+	border-bottom: 2px solid #8b1fc5;
+}
+.box input {
+	background: none;
+	color: white;
+	font-size: 17px;
+	/* text-align: center; */
+	border: none;
+	font-family: unset;
+}
+.box i {
+	color: white;
+	margin-right: 10px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	font-size: 14px;
+	padding: 3px 11px;
+	/* margin-left: 5px; */
+	font-weight: bold;
+	background: none;
+	border: 2px solid #8b1fc5;
+	color: white;
+	border-radius: 5px;
+	/* opacity:0.8; */
+}
+/* @media only screen and (max-width:645px){
+     .box{
     margin:24px 0px;
-    border-bottom: 2px solid #8b1fc5;;
+    border-bottom: 2px solid red;
+    font-size: small;
+     }
+ } 
+ @media only screen and (max-width:635px){
+     .box{
+    border-bottom: 2px solid red;
+    font-size: x-small;
+     }
+ } 
+ @media only screen and (max-width:625px){
+    .box{
+    border-bottom: 2px solid red;
+    font-size:xx-small;
+     }
+ }  */
 
+@media only screen and (max-width: 625px) {
+	.container {
+		width: 50%;
+	}
 }
-.box input{
-background: none;
-color: white;
-font-size: 17px;
-/* text-align: center; */
-border: none;
-font-family: unset;
-
-}
-.box i{
-    color: white;
-    margin-right: 10px;
-}
-
-input[type="submit"]{
-    cursor: pointer;
-    font-size: 14px;
-    padding: 3px 11px;
-    /* margin-left: 5px; */
-    font-weight: bold;
-    background: none;
-    border: 2px solid #8b1fc5;;
-    color: white;
-    border-radius: 5px;
-    opacity:0.8;
+@media only screen and (max-width: 490px) {
+	.container {
+		position: absolute;
+		top: 23%;
+		left: 25%;
+		width: 73%;
+	}
 }
